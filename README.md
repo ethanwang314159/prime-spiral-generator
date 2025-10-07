@@ -6,16 +6,7 @@ Generate unique **prime spirals** with Python by plotting prime numbers in a ran
 | :----------------------------: | :----------------------------: | :----------------------------: |
 |        Random spiral #15        |        Random spiral #17        |        Random spiral #19        |
 
----
-
-## Description
-
 **prime-spiral-generator** is an open project for generating images of **prime spirals** using Python and `matplotlib`.
-
-It’s designed for both:
-
-* **Non-programmers:** Just run `main.py` and 20 unique prime spirals will be generated automatically and saved in the `rand_images/` folder.
-* **Programmers:** Tweak the settings or use the scripts in `gen_scripts/` to experiment with colours, density, markers, and more.
 
 ---
 
@@ -75,7 +66,7 @@ By default:
 
 * 20 images will be generated.
 * Each image will use a random colour palette, marker style, and size.
-* All images are saved automatically in the `rand_images/` folder.
+* All images are saved in the `rand_images/` folder.
 
 From `main.py`:
 
