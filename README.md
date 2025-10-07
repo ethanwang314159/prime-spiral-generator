@@ -2,7 +2,7 @@
 
 Generate unique **prime spirals** with Python by plotting prime numbers in a random colour map using polar coordinates.
 
-| ![Sample 1](rand_images/14.png) | ![Sample 2](rand_images/16.png) | ![Sample 3](rand_images/18.png) |
+| ![Sample 1](sample_images/14.png) | ![Sample 2](sample_images/16.png) | ![Sample 3](sample_images/18.png) |
 | :----------------------------: | :----------------------------: | :----------------------------: |
 |        Random spiral #15        |        Random spiral #17        |        Random spiral #19        |
 
@@ -12,13 +12,13 @@ Generate unique **prime spirals** with Python by plotting prime numbers in a ran
 
 ## Sample images
 
-Sample outputs (from the included `rand_images/` folder):
+Sample outputs (from the included `sample_images/` folder):
 
-| ![Sample 1](rand_images/1.png) | ![Sample 2](rand_images/8.png) | ![Sample 3](rand_images/11.png) |
+| ![Sample 1](sample_images/1.png) | ![Sample 2](sample_images/8.png) | ![Sample 3](sample_images/11.png) |
 | :----------------------------: | :----------------------------: | :----------------------------: |
 |        Random spiral #2        |        Random spiral #9        |        Random spiral #12        |
 
-The repository includes 20 sample images (`0.png` through `19.png`) as examples of what the generator can produce.
+`sample_images/` includes 20 sample images (`0.png` through `19.png`).
 
 ---
 
@@ -66,7 +66,7 @@ By default:
 
 * 20 images will be generated.
 * Each image will use a random colour palette, marker style, and size.
-* All images are saved in the `rand_images/` folder.
+* All images are saved in the `rand_images/` folder by default.
 
 From `main.py`:
 
@@ -98,8 +98,10 @@ prime-spiral-generator/
 │   ├── ps_plt_gen.py          # Generates prime spiral plot (returns plt)
 │   └── rand_settings_gen.py   # Creates random settings
 │
-├── rand_images/
-│   ├── 0.png ... 19.png       # Sample images
+├── rand_images/               # Empty (for now)
+│
+├── sample_images/
+│   └── 0.png ... 19.png       # Sample images
 │
 └── main.py                    # Main script for spiral generation
 ```
