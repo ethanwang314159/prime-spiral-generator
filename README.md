@@ -2,7 +2,9 @@
 
 Generate unique **prime spirals** with Python by plotting prime numbers in a random colour map using polar coordinates.
 
-![Sample spiral](uhhhhhhh image not avaiable yet)
+![Sample spiral 1](rand_images/14.png)
+![Sample spiral 2](rand_images/16.png)
+![Sample spiral 3](rand_images/18.png)
 
 ---
 
@@ -21,9 +23,9 @@ It’s designed for both:
 
 Sample outputs (from the included `rand_images/` folder):
 
-| ![Sample 1](rand_images/0.png) | ![Sample 2](rand_images/1.png) | ![Sample 3](rand_images/2.png) |
+| ![Sample 1](rand_images/1.png) | ![Sample 2](rand_images/8.png) | ![Sample 3](rand_images/11.png) |
 | :----------------------------: | :----------------------------: | :----------------------------: |
-|        Random spiral #0        |        Random spiral #1        |        Random spiral #2        |
+|        Random spiral #2        |        Random spiral #9        |        Random spiral #12        |
 
 The repository includes 20 sample images (`0.png` through `19.png`) as examples of what the generator can produce.
 
