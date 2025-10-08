@@ -30,7 +30,6 @@ Sample outputs (from the included `sample_images/` folder):
 
   ```
   matplotlib
-  numpy
   random
   math
   ```
@@ -46,7 +45,7 @@ Sample outputs (from the included `sample_images/` folder):
 2. Install dependencies:
 
    ```bash
-   pip install matplotlib numpy
+   pip install matplotlib
    ```
 
    (`random` and `math` are builtin)

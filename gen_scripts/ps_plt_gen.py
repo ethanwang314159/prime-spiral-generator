@@ -1,6 +1,5 @@
 import os
 import matplotlib.pyplot as plt
-import numpy as np
 from matplotlib.colors import LinearSegmentedColormap
 
 DEFAULT_SETTINGS = ([(0, (0.03286600111091176, 0.9976179605209301, 0.9845250497488386)), (0.4299406771403493, (0.06465992780789409, 0.7582066062461121, 0.6683053114060715)), (1, (0.8171504997567098, 0.03270786797985625, 0.2416026008392388))], 500000, 1, 'o', 'black')
@@ -24,7 +23,7 @@ def gen_ps_plt(settings=DEFAULT_SETTINGS, log=False):
     primes = get_primes(BIGNESS)
     if log:
         print(primes[1], "primes")
-    r = np.array(primes[0])
+    r = primes[0]
     plt.figure(figsize=(8, 8), facecolor=BG)
     ax = plt.subplot(projection='polar')
     ax.set_facecolor(BG)
