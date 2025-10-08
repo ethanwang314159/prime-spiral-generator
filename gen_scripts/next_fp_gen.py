@@ -1,6 +1,6 @@
 import os
 
-def gen_next_filepath(directory):
+def gen_next_filepath(directory, logging=False):
     if not os.path.exists(directory):
         os.makedirs(directory)
     existing_files = os.listdir(directory)
@@ -15,9 +15,11 @@ def gen_next_filepath(directory):
     next_number = 0
     while next_number in numbers:
         next_number += 1
+    if logging:
+        print("Found filepath at", os.path.join(directory, f"{next_number}.png"))
     return os.path.join(directory, f"{next_number}.png")
 
 if __name__ != "__main__":
     print("imported module gen_next_filepath")
 else:
-    pass
+    gen_next_filepath("rand_images", True)

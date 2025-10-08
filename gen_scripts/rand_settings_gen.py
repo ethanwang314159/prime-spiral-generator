@@ -1,13 +1,13 @@
 import random, math
 
-def random_color(): 
+def random_colour(): 
     return (random.random(), random.random(), random.random())
 
 def random_cmap():
     positions = [random.random()]
     if positions[0] > 0: positions = [0] + positions
     if positions[-1] < 1: positions = positions + [1]
-    return [(pos, random_color()) for pos in positions]
+    return [(pos, random_colour()) for pos in positions]
 
 def random_marker():
     markers = ['o', '*', '.', ',', 'x', 'X', '+', 'P', 's', 'D', 'd', 'p', 'H', 'h', 'v', '^', '<', '>', '1', '2', '3', '4', '|', '_']
