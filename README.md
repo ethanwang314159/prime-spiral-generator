@@ -59,10 +59,6 @@ Sample outputs (from the included `sample_images/` folder):
 python main.py
 ```
 
-* 20 spirals.
-* Unique colour palette, marker style, size, number of primes.
-* Saved in `rand_images/`.
-
 ---
 
 ## File Structure
@@ -89,15 +85,6 @@ prime-spiral-generator/
 
 * **Animation:** visualise growth like the primes getting loaded in (maybe gifs).
 * **Interactive UI:** adjust spiral parameters (colours, marker size, number of primes) in a good ui. like change the size by dragging/clicking not typing a number.
-* **Configuration:** allow saving and loading certain random ranges or settings.
-
----
-
-## Contributing
-
-1. Fork the repository
-2. Make your changes
-3. Submit a pull request
 
 ---
 
