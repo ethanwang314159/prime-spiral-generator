@@ -19,7 +19,7 @@ Sample outputs (from `sample_images/`):
 
 `sample_images/` includes 20 sample images (`0.png` through `19.png`).
 
-Sample grid outputs (from `grid_images/`):
+Sample grid output (from `grid_images/`):
 
 ![Grid 1](grid_images/grid0.png/)
 
@@ -61,7 +61,7 @@ Sample grid outputs (from `grid_images/`):
 ```bash
 python main.py
 ```
-Generates 16 unique spirals and then a 4 by 4 grid with those spirals into rand_images and grid_images.
+Generates 16 unique spirals and then a 4 by 4 grid with those spirals into `rand_images` and `grid_images`.
 
 ---
 
@@ -91,8 +91,9 @@ prime-spiral-generator/
 
 ## Todo
 
-* **Animation:** visualise growth like the primes getting loaded in (maybe gifs).
-* **Interactive UI:** adjust spiral parameters (colours, marker size, number of primes) in a good ui. like change the size by dragging/clicking not typing a number.
+***Animation:** visualise the spirals forming like the primes getting loaded in (maybe gifs).
+***Interactive:** adjustable spiral settings in a good ui. like change the size by dragging/clicking not typing a number.
+***Vote:** a website where you vote between two spirals and using an algorithm like the elo system find the perfect spiral with a leaderboard etc
 
 ---
 

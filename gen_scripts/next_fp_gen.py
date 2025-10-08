@@ -19,7 +19,7 @@ def gen_next_filepath(directory, logging=False, abbr=""):
         next_number += 1
     if logging:
         print("Found filepath at", os.path.join(directory, f"{abbr}{next_number}.png"))
-    return os.path.join(directory, f"{abbr}{next_number}.png")
+    return (os.path.join(directory, f"{abbr}{next_number}.png"), next_number)
 
 
 if __name__ != "__main__":
