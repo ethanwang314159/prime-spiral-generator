@@ -7,7 +7,7 @@ The script plots prime numbers with a random colour map onto a grid using polar 
 
 ## Sample images
 
-Sample outputs (from the included `sample_images/` folder):
+Sample outputs (from `sample_images/`):
 
 | ![Sample 1](sample_images/1.png) | ![Sample 2](sample_images/8.png) | ![Sample 3](sample_images/11.png) |
 | :----------------------------: | :----------------------------: | :----------------------------: |
@@ -18,6 +18,10 @@ Sample outputs (from the included `sample_images/` folder):
 |        Random spiral #15        |        Random spiral #17        |        Random spiral #19        |
 
 `sample_images/` includes 20 sample images (`0.png` through `19.png`).
+
+Sample grid outputs (from `grid_images/`):
+
+![Grid 1](grid_images/grid0.png/)
 
 ---
 
@@ -57,6 +61,7 @@ Sample outputs (from the included `sample_images/` folder):
 ```bash
 python main.py
 ```
+Generates 16 unique spirals and then a 4 by 4 grid with those spirals into rand_images and grid_images.
 
 ---
 
@@ -69,11 +74,15 @@ prime-spiral-generator/
 │   ├── next_fp_gen.py         # Finds next available file path in folder
 │   ├── ps_plt_gen.py          # Generates prime spiral plot (returns plt)
 │   └── rand_settings_gen.py   # Creates random settings
+│   └── grid_gen.py            # Generates a grid of spirals
 │
 ├── rand_images/               # Empty (for now)
 │
 ├── sample_images/
 │   └── 0.png ... 19.png       # Sample images
+│
+├── grid_images/
+│   └── grid0.png              # Sample grid image
 │
 └── main.py                    # Main script for spiral generation
 ```
