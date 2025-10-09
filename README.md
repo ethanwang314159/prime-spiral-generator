@@ -1,5 +1,6 @@
 # Prime spiral generator
 
+Inspired by [3b1b's short on prime spirals](https://www.youtube.com/shorts/h2V3r7oBeMI)
 Generate unique **prime spirals** with Python and `matplotlib`.
 The script plots prime numbers with a random colour map onto a grid using polar coordinates.
 
@@ -95,9 +96,9 @@ prime-spiral-generator/
 
 ## Todo
 
-***Animation:** visualise the spirals forming like the primes getting loaded in (maybe gifs).  
-***Interactive:** adjustable spiral settings in a good ui. like change the size by dragging/clicking not typing a number.  
-***Vote:** a website where you vote between two spirals and using an algorithm like the elo system find the perfect spiral with a leaderboard etc  
+*** Animation:** visualise the spirals forming like the primes getting loaded in (maybe gifs).  
+*** Interactive:** adjustable spiral settings in a good ui. like change the size by dragging/clicking not typing a number.  
+*** Vote:** a website where you vote between two spirals and using an algorithm like the elo system find the perfect spiral with a leaderboard etc  
 
 ---
 
