@@ -82,6 +82,8 @@ prime-spiral-generator/
 │
 ├── rand_images/               # Empty (for now)
 │
+├── temp_images/               # Temp images for large grid generation(not saving each spiral)
+│
 ├── sample_images/
 │   └── 0.png ... 19.png       # Sample images
 │
