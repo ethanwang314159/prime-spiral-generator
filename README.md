@@ -19,9 +19,13 @@ Sample outputs (from `sample_images/`):
 
 `sample_images/` includes 20 sample images (`0.png` through `19.png`).
 
-Sample grid output (from `grid_images/`):
+Sample grid outputs (from `grid_images/`):
 
 ![Grid 1](grid_images/grid0.png/)
+4 by 4 grid
+
+![Grid 2](grid_images/grid1.png)
+33 by 33 grid
 
 ---
 

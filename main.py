@@ -20,4 +20,5 @@ def grid_gen_final(side=4, outpath="grid_images", temploc="rand_images", keep=Tr
     if not keep:
         clear_folder(temploc)
 
+# grid_gen_final(keep=False, temploc="temp_images", side=33)
 grid_gen_final()
