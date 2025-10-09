@@ -2,7 +2,7 @@ from PIL import Image
 from gen_scripts.next_fp_gen import gen_next_filepath
 import os
 
-def grid_gen(inpath: str="rand_images", outpath: str="grid_images", side: int=4, startnum: int=0, open=True):
+def grid_gen(inpath: str="rand_images", outpath: str="grid_images", side=4, startnum=0, open=True):
     filepath = gen_next_filepath(outpath, False, "grid")[0]
     images = []
     for i in range(startnum, startnum+side**2, 1):
