@@ -1,7 +1,7 @@
 # Prime spiral generator
 
-Inspired by [3b1b's short on prime spirals](https://www.youtube.com/shorts/h2V3r7oBeMI)
-Generate unique **prime spirals** with Python and `matplotlib`.
+Inspired by [3b1b's video](https://www.youtube.com/watch?v=EK32jo7i5LQ) on prime spirals and more.
+Generates unique prime spirals with Python and `matplotlib`.
 The script plots prime numbers with a random colour map onto a grid using polar coordinates.
 
 ---
@@ -18,7 +18,7 @@ Sample outputs (from `sample_images/`):
 | :----------------------------: | :----------------------------: | :----------------------------: |
 |        Random spiral #15        |        Random spiral #17        |        Random spiral #19        |
 
-`sample_images/` includes 20 sample images (`0.png` through `19.png`).
+`sample_images/` includes 20 sample images
 
 Sample grid outputs (from `grid_images/`):
 
@@ -27,6 +27,8 @@ Sample grid outputs (from `grid_images/`):
 
 ![Grid 2](grid_images/grid1.png)
 33 by 33 grid
+
+`sample_images/` includes 2 sample grids
 
 ---
 
@@ -54,10 +56,8 @@ Sample grid outputs (from `grid_images/`):
 2. Install dependencies:
 
    ```bash
-   pip install matplotlib
+   pip install -r requirements.txt
    ```
-
-   (`random` and `math` are builtin)
 
 ---
 
@@ -87,7 +87,8 @@ prime-spiral-generator/
 │   └── 0.png ... 19.png       # Sample images
 │
 ├── grid_images/
-│   └── grid0.png              # Sample grid image
+│   └── grid0.png              # 4x4 Sample grid image
+│   └── grid1.png              # 33x33 Sample grid image
 │
 └── main.py                    # Main script for spiral generation
 ```
