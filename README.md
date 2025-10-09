@@ -37,8 +37,7 @@ Sample grid outputs (from `grid_images/`):
 ### Requirements
 
 * **Python 3.10+**
-* The following libraries:
-
+  
   ```
   matplotlib
   random
@@ -100,9 +99,3 @@ prime-spiral-generator/
 *** Animation:** visualise the spirals forming like the primes getting loaded in (maybe gifs).  
 *** Interactive:** adjustable spiral settings in a good ui. like change the size by dragging/clicking not typing a number.  
 *** Vote:** a website where you vote between two spirals and using an algorithm like the elo system find the perfect spiral with a leaderboard etc  
-
----
-
-## License
-
-MIT license.
