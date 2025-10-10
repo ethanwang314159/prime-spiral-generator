@@ -1,9 +1,10 @@
 # Prime spiral generator
 
-Inspired by [3b1b's video](https://www.youtube.com/watch?v=EK32jo7i5LQ) on prime spirals and more.
-Generates unique prime spirals with Python and `matplotlib`.
-The script plots prime numbers with a random colour map onto a grid using polar coordinates.
-It used to use Sieve of Eratosthenes which is like O(N log (log N)) but now it uses a caching system you can check that out in `gen_scripts/prime_gen` and choose which one to use in `gen_scripts/ps_plt_gen.py` 
+Inspired by [3b1b's video](https://www.youtube.com/watch?v=EK32jo7i5LQ) on prime spirals and more.  
+Generates unique prime spirals with Python and `matplotlib`.  
+The script plots prime numbers with a random colour map onto a grid using polar coordinates.  
+It used to use Sieve of Eratosthenes which is like O(N log (log N)) but now it uses a caching system you can check that out in `gen_scripts/prime_gen` and choose which one to use in `gen_scripts/ps_plt_gen.py`.  
+Actually the sieve is faster im not sure why im gonna optimise the cache method.  
 
 ---
 
