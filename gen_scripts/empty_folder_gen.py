@@ -1,5 +1,4 @@
 import os
-import shutil
 
 def clear_folder(folder_path="temp_images"):
     if not os.path.exists(folder_path):

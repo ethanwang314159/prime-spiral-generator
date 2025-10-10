@@ -1,26 +1,20 @@
 import os
 import matplotlib.pyplot as plt
 from matplotlib.colors import LinearSegmentedColormap
+from gen_scripts.prime_gen.get_primes_sieve import get_primes_sieve
+from gen_scripts.prime_gen.get_primes_cache import get_primes_cache
 
 DEFAULT_SETTINGS = ([(0, (0.03286600111091176, 0.9976179605209301, 0.9845250497488386)), (0.4299406771403493, (0.06465992780789409, 0.7582066062461121, 0.6683053114060715)), (1, (0.8171504997567098, 0.03270786797985625, 0.2416026008392388))], 500000, 1, 'o', 'black')
 
-def get_primes(n):
-    if n < 2:
-        return []
-    is_prime = [True] * (n + 1)
-    is_prime[0] = is_prime[1] = False
-    p = 2
-    while p * p <= n:
-        if is_prime[p]:
-            for multiple in range(p * p, n + 1, p):
-                is_prime[multiple] = False
-        p += 1
-    primes = [i for i, prime_status in enumerate(is_prime) if prime_status]
-    return (primes, str(len(primes)), primes[-1])
-
-def gen_ps_plt(settings=DEFAULT_SETTINGS, log=False):
+def gen_ps_plt(settings=DEFAULT_SETTINGS, log=False, prime_gen_method="sieve"):
     CMAP, BIGNESS, SIZE, MARKER, BG = settings
-    primes = get_primes(BIGNESS)
+    match prime_gen_method:
+        case "sieve":
+            primes = get_primes_sieve(BIGNESS)
+        case "cache":
+            primes = get_primes_cache(BIGNESS)
+        case _:
+            raise ValueError("incorrect prime_gen_method parameter")
     if log:
         print(primes[1], "primes")
     r = primes[0]

@@ -3,6 +3,7 @@
 Inspired by [3b1b's video](https://www.youtube.com/watch?v=EK32jo7i5LQ) on prime spirals and more.
 Generates unique prime spirals with Python and `matplotlib`.
 The script plots prime numbers with a random colour map onto a grid using polar coordinates.
+It used to use Sieve of Eratosthenes which is like O(N log (log N)) but now it uses a caching system you can check that out in `gen_scripts/prime_gen` and choose which one to use in `gen_scripts/ps_plt_gen.py` 
 
 ---
 
@@ -101,3 +102,5 @@ prime-spiral-generator/
 * **Animation:** visualise the spirals forming like the primes getting loaded in (maybe gifs).  
 * **Interactive:** adjustable spiral settings in a good ui. like change the size by dragging/clicking not typing a number.  
 * **Vote:** a website where you vote between two spirals and using an algorithm like the elo system find the perfect spiral with a leaderboard etc  
+* **Optimise:** make it faster
+* **Tweak the settings:** make it better
