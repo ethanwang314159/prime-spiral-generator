@@ -12,6 +12,7 @@ def get_primes_cache(n): # O(N) I think because it has to iterate through each l
             save_primes()
             return get_primes_cache()
         with open(filename, "r") as f:
+            f.readline()
             primes_cache = [int(line.strip()) for line in f.readlines()]
 
     idx = bisect.bisect_right(primes_cache, n)

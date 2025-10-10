@@ -4,6 +4,7 @@ import os
 def save_primes(limit=100000000, filename="gen_scripts/prime_gen/primes_cache.rs", log=False):
     if os.path.exists(filename):
         with open(filename, "r") as f:
+            f.readline()
             cached_primes = [int(line.strip()) for line in f.readlines()]
     else:
         cached_primes = []
