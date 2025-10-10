@@ -77,23 +77,29 @@ Generates 16 unique spirals and then a 4 by 4 grid with those spirals into `rand
 prime-spiral-generator/
 │
 ├── gen_scripts/
-│   ├── next_fp_gen.py         # Finds next available file path in folder
-│   ├── ps_plt_gen.py          # Generates prime spiral plot (returns plt)
-│   └── rand_settings_gen.py   # Creates random settings
-│   └── grid_gen.py            # Generates a grid of spirals
+│   ├── next_fp_gen.py          # Finds next available file path in folder
+│   ├── ps_plt_gen.py           # Generates prime spiral plot (returns plt)
+│   ├── rand_settings_gen.py    # Creates random settings
+│   ├── grid_gen.py             # Generates a grid of spirals
+│   ├── empty_folder_gen.py     # 
+│   └── prime_gen
+│       ├── get_primes_cache.py # Getting primes with cache
+│       ├── get_primes_sieve.py # Getting primes with sieve
+│       ├── primes_cacher.py    # Cacheing primes 
+│       ├── primes_cache.rs     # Cached primes storage
 │
-├── rand_images/               # Empty (for now)
+├── rand_images/                # Empty (for now)
 │
-├── temp_images/               # Temp images for large grid generation(not saving each spiral)
+├── temp_images/                # Temp images for large grid generation(not saving each spiral)
 │
 ├── sample_images/
-│   └── 0.png ... 19.png       # Sample images
+│   └── 0.png ... 19.png        # Sample images
 │
 ├── grid_images/
-│   └── grid0.png              # 4x4 Sample grid image
-│   └── grid1.png              # 33x33 Sample grid image
+│   └── grid0.png               # 4x4 Sample grid image
+│   └── grid1.png               # 33x33 Sample grid image
 │
-└── main.py                    # Main script for spiral generation
+└── main.py                     # Main script for spiral generation
 ```
 
 ---
