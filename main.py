@@ -12,7 +12,7 @@ def grid_gen_final(side=4, outpath="grid_images", temploc="rand_images", keep=Tr
     for i in range(AREA):
         FILEPATH = gen_next_filepath(temploc)[0]
         settings = gen_random_settings()
-        plt = gen_ps_plt(settings, prime_gen_method="sieve") # rip sieve is 15.64 seconds which is faster than cache at 16.41 seconds
+        plt = gen_ps_plt(settings, prime_gen_method="cache") # rip sieve is 15.64 seconds which is faster than cache at 16.41 seconds
         plt.savefig(FILEPATH, dpi=300, bbox_inches='tight', facecolor=settings[4])
         plt.close()
     
